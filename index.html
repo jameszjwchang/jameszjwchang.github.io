@@ -1,4 +1,99 @@
 ---
-layout: home
-# Index page
+layout: page
+title: Welcome to My Site
+permalink: /
 ---
+
+<div class="container-fluid p-0">
+  <!-- Hero Banner Section -->
+  <div class="hero-banner position-relative" style="height: 100vh; overflow: hidden;">
+    <!-- Background Image -->
+    <div class="background-image w-100 h-100" style="background-image: url('/assets/img/TemporaryPicture.jpeg'); background-size: cover; background-position: center; position: absolute; top: 0; left: 0;"></div>
+    
+    <!-- Dark Overlay -->
+    <div class="dark-overlay w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0;"></div>
+    
+    <!-- Hero Content -->
+    <div class="hero-content position-absolute w-100 text-center text-white" style="top: 50%; transform: translateY(-50%);">
+      <div class="container">
+        <h1 class="display-3 font-weight-bold">James Chang</h1>
+        <p class="lead font-weight-bold">Musician, Creator, Developer</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- About Me Section -->
+    <section class="my-5">
+      <h2 class="mb-4">About Me</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="/assets/img/TemporaryPicture.jpeg" alt="James Chang" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8">
+          <p>
+            Welcome to my personal website! I'm James Chang, and this is where I share my music performances, projects, and thoughts.
+            [Add your personal introduction here]
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Music Performances -->
+    <section class="my-5">
+      <h2 class="mb-4">My Performances</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R5u5MzPYIL4" 
+              allowfullscreen title="Performance 1"></iframe>
+          </div>
+          <h5 class="mt-2">Performance Title 1</h5>
+          <p>Brief description of this performance</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LMiG2tqmipc" 
+              allowfullscreen title="Performance 2"></iframe>
+          </div>
+          <h5 class="mt-2">Performance Title 2</h5>
+          <p>Brief description of this performance</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Gallery -->
+    <section class="my-5">
+      <h2 class="mb-4">Gallery</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="/assets/img/gallery-1.jpg" alt="Gallery Image 1" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="/assets/img/gallery-2.jpg" alt="Gallery Image 2" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="/assets/img/gallery-3.jpg" alt="Gallery Image 3" class="img-fluid rounded">
+        </div>
+      </div>
+    </section>
+    
+    <!-- Recent Posts - Optional: Can remove if you don't want any posts on the front page -->
+    <section class="my-5">
+      <h2 class="mb-4">Latest Updates</h2>
+      <div class="row">
+        {% for post in site.posts limit:2 %}
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">{{ post.title }}</h5>
+              <p class="card-text">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+              <a href="{{ post.url | relative_url }}" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</div>
