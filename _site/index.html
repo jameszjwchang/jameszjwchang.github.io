@@ -800,17 +800,55 @@
       Welcome to My Site
     </h1>
     <div class="content">
-      <div class="container-fluid p-0">
+      <!-- Add viewport meta tag if not already present in your layout -->
+<style>
+  /* Normalize CSS for hero section */
+  .hero-banner {
+    height: 100vh; /* This can cause inconsistencies across browsers */
+    min-height: 500px; /* Fallback minimum height */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    background-image: url('/assets/img/TemporaryPicture.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+</style>
+
+<div class="container-fluid p-0">
   <!-- Hero Banner Section -->
-  <div class="hero-banner position-relative" style="height: 100vh; overflow: hidden;">
-    <!-- Background Image -->
-    <div class="background-image w-100 h-100" style="background-image: url('/assets/img/TemporaryPicture.jpeg'); background-size: cover; background-position: center; position: absolute; top: 0; left: 0;"></div>
-    
-    <!-- Dark Overlay -->
-    <div class="dark-overlay w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0;"></div>
-    
-    <!-- Hero Content -->
-    <div class="hero-content position-absolute w-100 text-center text-white" style="top: 50%; transform: translateY(-50%);">
+  <div class="hero-banner">
+    <div class="background-image"></div>
+    <div class="dark-overlay"></div>
+    <div class="hero-content">
       <div class="container">
         <h1 class="display-3 font-weight-bold">James Chang</h1>
         <p class="lead font-weight-bold">Musician, Creator, Developer</p>
