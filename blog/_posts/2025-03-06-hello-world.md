@@ -10,15 +10,6 @@ comments: true
 
 # Hello World
 
-Hello! This is my first blog post. Welcome to my personal website where I share my experiences with music, development, art, and other interests.
+Hello! This is my first blog post. Welcome to my personal website! Here, I'll share things that I do and things that I find interesting.
 
-I've created this blog as a way to document my journey and share my thoughts with others who might be interested in similar topics. Here, you'll find content about:
-
-- My musical performances and compositions
-- Development projects I'm working on
-- Art and creative explorations
-- Chess strategies and games
-- Rubik's cube solving techniques
-- Book recommendations and reviews
-
-I hope you enjoy following along with my adventures!
+I hope you enjoy following along!
