@@ -8,8 +8,6 @@ author: James Chang
 comments: true
 ---
 
-# Hello World
-
 Hello! This is my first blog post. Welcome to my personal website! Here, I'll share things that I do and things that I find interesting.
 
 I hope you enjoy following along!
