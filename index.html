@@ -1,137 +1,120 @@
 ---
-layout: page
-title: Welcome to My Site
-permalink: /
+layout: default
+title: Home
 ---
 
-<!-- Add viewport meta tag if not already present in your layout -->
-<style>
-  /* Normalize CSS for hero section */
-  .hero-banner {
-    height: 100vh; /* This can cause inconsistencies across browsers */
-    min-height: 500px; /* Fallback minimum height */
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .background-image {
-    background-image: url('/assets/img/TemporaryPicture.jpeg');
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .hero-content {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-</style>
+<!-- Hero Banner Section -->
+<div class="hero-banner">
+  <div class="background-image"></div>
+  <div class="dark-overlay"></div>
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="display-3 font-weight-bold">{{ site.title }}</h1>
+      <p class="lead font-weight-bold">{{ site.tagline }}</p>
+    </div>
+  </div>
+</div>
 
-<div class="container-fluid p-0">
-  <!-- Hero Banner Section -->
-  <div class="hero-banner">
-    <div class="background-image"></div>
-    <div class="dark-overlay"></div>
-    <div class="hero-content">
-      <div class="container">
-        <h1 class="display-3 font-weight-bold">James Chang</h1>
-        <p class="lead font-weight-bold">Musician, Creator, Developer</p>
+<div class="container my-5">
+  <!-- Intro Section -->
+  <section class="text-center mb-5">
+    <h2>Welcome to My World</h2>
+    <p class="lead">Explore my diverse interests and creative pursuits</p>
+  </section>
+
+  <!-- Interest Categories -->
+  <div class="row g-4">
+    <!-- Music -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="/assets/img/sections/music.jpg" class="card-img-top" alt="Music">
+        <div class="card-body">
+          <h3 class="card-title">Music</h3>
+          <p class="card-text">Performances, compositions, and my musical journey.</p>
+          <a href="/music/" class="btn btn-primary">Explore Music</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Development -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="/assets/img/sections/dev.jpg" class="card-img-top" alt="Development">
+        <div class="card-body">
+          <h3 class="card-title">Development</h3>
+          <p class="card-text">Coding projects and technical explorations.</p>
+          <a href="/dev/" class="btn btn-primary">View Projects</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Art -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="/assets/img/sections/art.jpg" class="card-img-top" alt="Art">
+        <div class="card-body">
+          <h3 class="card-title">Art</h3>
+          <p class="card-text">My paintings and other creative expressions.</p>
+          <a href="/art/" class="btn btn-primary">View Gallery</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Chess -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="/assets/img/sections/chess.jpg" class="card-img-top" alt="Chess">
+        <div class="card-body">
+          <h3 class="card-title">Chess</h3>
+          <p class="card-text">Games, puzzles, and my chess journey.</p>
+          <a href="/chess/" class="btn btn-primary">Checkmate</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Cubing -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="/assets/img/sections/cubing.jpg" class="card-img-top" alt="Cubing">
+        <div class="card-body">
+          <h3 class="card-title">Cubing</h3>
+          <p class="card-text">Techniques, records, and speedcubing experiences.</p>
+          <a href="/cubing/" class="btn btn-primary">Twist & Turn</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Books -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="/assets/img/sections/books.jpg" class="card-img-top" alt="Books">
+        <div class="card-body">
+          <h3 class="card-title">Books</h3>
+          <p class="card-text">Reviews and recommendations from my reading list.</p>
+          <a href="/books/" class="btn btn-primary">Start Reading</a>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="container">
-    <!-- About Me Section -->
-    <section class="my-5">
-      <h2 class="mb-4">About Me</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <img src="/assets/img/TemporaryPicture.jpeg" alt="James Chang" class="img-fluid rounded">
-        </div>
-        <div class="col-md-8">
-          <p>
-            Welcome to my personal website! I'm James Chang, and this is where I share my music performances, projects, and thoughts.
-            [Add your personal introduction here]
-          </p>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Music Performances -->
-    <section class="my-5">
-      <h2 class="mb-4">My Performances</h2>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R5u5MzPYIL4" 
-              allowfullscreen title="Performance 1"></iframe>
-          </div>
-          <h5 class="mt-2">Performance Title 1</h5>
-          <p>Brief description of this performance</p>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LMiG2tqmipc" 
-              allowfullscreen title="Performance 2"></iframe>
-          </div>
-          <h5 class="mt-2">Performance Title 2</h5>
-          <p>Brief description of this performance</p>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Gallery -->
-    <section class="my-5">
-      <h2 class="mb-4">Gallery</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <img src="/assets/img/gallery-1.jpg" alt="Gallery Image 1" class="img-fluid rounded">
-        </div>
-        <div class="col-md-4 mb-4">
-          <img src="/assets/img/gallery-2.jpg" alt="Gallery Image 2" class="img-fluid rounded">
-        </div>
-        <div class="col-md-4 mb-4">
-          <img src="/assets/img/gallery-3.jpg" alt="Gallery Image 3" class="img-fluid rounded">
-        </div>
-      </div>
-    </section>
-    
-    <!-- Recent Posts - Optional: Can remove if you don't want any posts on the front page -->
-    <section class="my-5">
-      <h2 class="mb-4">Latest Updates</h2>
-      <div class="row">
-        {% for post in site.posts limit:2 %}
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">{{ post.title }}</h5>
-              <p class="card-text">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-              <a href="{{ post.url | relative_url }}" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
+  
+  <!-- Blog Section -->
+  <section class="mt-5">
+    <h2>Latest Blog Posts</h2>
+    <div class="row mt-4">
+      <div class="col-lg-8">
+        {% for post in site.posts limit:5 %}
+        <article class="mb-4">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="text-muted">{{ post.date | date: "%B %d, %Y" }}</p>
+          <p>{{ post.excerpt }}</p>
+          <a href="{{ post.url | relative_url }}" class="btn btn-sm btn-outline-primary">Read More</a>
+        </article>
+        {% if forloop.last == false %}
+          <hr class="my-4">
+        {% endif %}
         {% endfor %}
+        <a href="/blog/" class="btn btn-outline-primary mt-3">Visit My Blog</a>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </div>
