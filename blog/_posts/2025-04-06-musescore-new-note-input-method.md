@@ -6,7 +6,20 @@ categories: [Blog]
 tags: [Music]
 author: James Chang
 comments: true
+image: musescore-4.jpg
+image_caption: "MuseScore 4 (image provided by Muse Group)"
 ---
+
+<!--more-->
+
+{% if page.image %}
+<figure style="text-align: center; margin-bottom: 1.5em;">
+  <img src="{{ '/blog/assets/' | append: page.image | relative_url }}" alt="{{ page.title }} image" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  {% if page.image_caption %}
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 0.5em;">{{ page.image_caption }}</figcaption>
+  {% endif %}
+</figure>
+{% endif %}
 
 Just recently, muse group (which is apparently now the owner of Musescore) released Musescore 4.5. With the update came a slew of new features, including a new app icon, new file icons, and a new splash screen. Most notably, Musescore released a new **note input method**. Obviously, as a budding composer, this was the most exciting feature! 
 
