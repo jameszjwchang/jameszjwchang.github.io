@@ -5,7 +5,7 @@ date: 2025-5-11 00:00:00 +0800
 categories: [Blog]
 tags: [Music]
 author: James Chang
-comments: true
+comments: false
 image: paganini.jpg
 image_caption: "From The Project Gutenberg EBook of Nicolo Paganini: His Life and Work, by 
 Stephen Samuel Stratton.

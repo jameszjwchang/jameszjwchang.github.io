@@ -12,7 +12,7 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Five Suggestions for Learning Paganini's 24th Caprice | James Chang</title>
+  <title>Running macOS betas in a virtual machine on the current macOS | James Chang</title>
   <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -49,9 +49,9 @@
     <div class="col-lg-8">
       <article class="post">
         <header class="post-header mb-4">
-          <h1>Five Suggestions for Learning Paganini's 24th Caprice</h1>
+          <h1>Running macOS betas in a virtual machine on the current macOS</h1>
           <div class="post-meta">
-            <span>May 10, 2025</span>
+            <span>June 24, 2025</span>
             
             <span class="ms-3">
               Categories: 
@@ -68,7 +68,7 @@
             <span class="ms-3">
               Tags: 
               
-              <a href="/tags-music/">Music</a>
+              <a href="/tags-development/">Development</a>
               
               
             </span>
@@ -80,30 +80,25 @@
           <!--more-->
 
 <figure style="text-align: center; margin-bottom: 1.5em;">
-  <img src="/blog/assets/paganini.jpg" alt="Five Suggestions for Learning Paganini's 24th Caprice image" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  <img src="/blog/assets/macOS-tahoe-intro-view.jpg" alt="Running macOS betas in a virtual machine on the current macOS image" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
   
-    <figcaption style="font-size: 0.9em; color: #555; margin-top: 0.5em;">From The Project Gutenberg EBook of Nicolo Paganini: His Life and Work, by Stephen Samuel Stratton.
-This humorous picture is on the title-page of a comic song, "The wonderful Paganini, or London fiddling mad." The poetry by W. T. Moncrieff, Esq., and the melody by one of the first composers of the day! London, published by Leoni Lee, circa 1831. The "poetry" is not of a classical standard.</figcaption>
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 0.5em;">From Apple's official macOS Tahoe preview page</figcaption>
   
 </figure>
 
-<p>Ah, yes, Paganini’s 24th Caprice, the Everest of all violin repertoire…</p>
+<p>This is a quick blog post to help others (and definitely me the next time macOS betas roll around) with installing the upcoming macOS’s beta in a VM on a MacBook running the current macOS. When I tried installing the VM, I encountered an error with installing the vm that went along the lines of “macOS needs to update in order to install new virtual machine.” With the following, this won’t happen! Below are the steps to do so:</p>
 
-<p>This Caprice is no doubt one of the most technically difficult pieces composed for the violin. Throughout my journey in learning it, I stumbled upon many of the common pitfalls (such as with the 3rds and 10ths), and I learned many valuable skills along the way. And I want to share that with you guys now!</p>
+<ol>
+  <li>Go to the <a href="developer.apple.com/download">Downloads page in the Apple Developer Website</a>.</li>
+  <li>Scroll down, and find the most recent macOS beta. At the time of writing, that is the second beta for macOS Tahoe. Download the corresponding linked restore image.
+<img src="/blog/assets/Tahoe-beta2-download-page.png" alt="The macOS Tahoe beta 2 download image as seen on the developer page" title="macOS Tahoe beta 2 download page" /></li>
+  <li>Scroll down further, and download the Device Support for macOS (26 beta 2, as of writing).
+<img src="/blog/assets/Device_Support.png" alt="The device support download page" title="Device support download page" />
+ Alternatively, if you are a developer like me, you can just simply go ahead and download the beta Xcode. It includes the device support from supporting all of the simulators and OSes.</li>
+  <li>Use your favorite virtual machine software, and use the restore image to create the beta virtual machine!</li>
+</ol>
 
-<p><strong>Tip numero uno</strong> - make sure to stretch your hands before you play. There is a really good hand stretching video on YouTube from <a href="https://youtu.be/DPwAwfzXpNs">The Violin Coach</a>, and it really helps you loosen your finger joints. I discovered that after doing the stretches suggested in the video, 8ths and 10ths come by a lot easier. In fact, most of the unconventional fingerings, such as during the third phrase of the first variation and the double stop string crossings of the finale, became much easier to get in tune; my fingers also got less sore over time.</p>
-
-<p><strong>Tip numero duo</strong> - practice your chromatic double stops for the third variation. While some may say that practicing ionion scales are sufficient for playing octave stuff, from my personal experience, practicing the chromatic scales for octaves tremendously improved my octaves, especially for the third variation (it also helped the octave jumps in the latter half of the 5th variation).</p>
-
-<p><strong>Tip nombre trois</strong> - when practicing the 10ths, make sure to practice them in the form that you’ll play them. By this, I mean that you should keep the intended bowing throughout the variation, even when practicing for intonation. Practicing each of the 10ths separately is a lot easier, both on the fingers and on the mind (for remembering whether it is a major or minor third), which makes you falsely think that you <em>got it</em> for the variation. In fact, when you play it at the (relatively) original speed and with the proper bowing, all your intonation will get messed up again. The key thing to practice here is that <em>shifting</em> between each of the tenths—that’s what causes most of the intonation problems. You have to get used to hearing the shifts and the relationship between each double stop in order to really master the intonation. After a couple practice sessions with this, your tenths should be in good shape!</p>
-
-<p><strong>Tip number 4</strong> - Practice everything slowly. I cannot state this more. When I first began practicing this piece. I made the mistake of practicing it at a speed that <em>sounded</em> virtuostic and fun. That, however, caused the clarity of my playing to drop rapidly. Just follow the adage of playing slow and gradually (subconsciously) reaching the desired tempo</p>
-
-<p><strong>Final tip number five</strong> - Don’t give up! Don’t be discouraged! There have been many times where I practice a certain part over and over until it sounds right, only for all of my progress to seemingly disappear the next day. The important thing to remember is that muscle memory and mental memory takes time to build up; you must stay consistent with your practice schedule, and make sure to allocate a (roughly) equal amount of time to each variation (of course, do spend a lot more time on the 10ths though!).</p>
-
-<p>The 24th Caprice may be a difficult piece, but ultimately, it is deeply rewarding; the technical knowledge and prowess that you’ll gain from practicing it is universally applicable in the rest of violin repertoire. Follow the tips above, and you’ll get there eventually!</p>
-
-<p>Now go practice 40 hours a day!</p>
+<p>And Voila! You now have a functioning VM for the new upcoming macOS. Have fun exploring the new beta!</p>
 
 
         </div>

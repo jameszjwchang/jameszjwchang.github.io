@@ -5,7 +5,7 @@ date: 2025-4-13 00:00:00 +0800
 categories: [Blog]
 tags: [Writing]
 author: James Chang
-comments: true
+comments: false
 image: writer.jpg # Changed: Just the filename. Place this image in /blog/_posts/
 image_caption: "“Writ” by Nick Youngson, The Blue Diamond Gallery, CC BY-SA 3.0."
 # image_caption: "This is an optional caption for the image." # Optional

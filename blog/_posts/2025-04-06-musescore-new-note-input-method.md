@@ -5,7 +5,7 @@ date: 2025-4-06 00:00:00 +0800
 categories: [Blog]
 tags: [Music]
 author: James Chang
-comments: true
+comments: false
 image: musescore-4.jpg
 image_caption: "MuseScore 4 (image provided by Muse Group)"
 ---
