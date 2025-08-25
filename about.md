@@ -26,7 +26,7 @@ permalink: /about/
     <div class="col-lg-8">
       <section class="mb-5">
         <h3 class="section-heading">About Me</h3>
-        <p>Welcome to my personal website! I'm James Chang, a versatile individual with passions spanning music, technology, art, chess, Rubik's cubing, and literature. My diverse interests have shaped me into a multifaceted problem-solver who approaches challenges from unique perspectives.</p>
+  <p>Welcome to my personal website! I'm James Chang, a versatile individual with passions spanning music, technology, art, and literature. My diverse interests have shaped me into a multifaceted problem-solver who approaches challenges from unique perspectives.</p>
         <p>This website serves as a portfolio of my work and interests, showcasing the various dimensions of my life and creative pursuits.</p>
       </section>
       
@@ -82,9 +82,9 @@ permalink: /about/
           <div class="col-md-6">
             <h4>Other Interests</h4>
             <ul>
-              <li>Chess strategy</li>
-              <li>Speed cubing techniques</li>
               <li>Literary analysis</li>
+              <li>Design & aesthetics</li>
+              <li>Creative writing</li>
             </ul>
           </div>
         </div>

@@ -3,7 +3,7 @@ layout: interest
 title: Books
 subtitle: Reviews and recommendations from my reading list
 permalink: /books/
-order: 6
+order: 4
 ---
 
 <div class="row mt-5">
@@ -43,7 +43,7 @@ order: 6
         <div class="card h-100">
           <div class="card-body">
             <h3 class="card-title">Technical & Reference</h3>
-            <p class="card-text">Books related to music, programming, chess, and other specialized interests.</p>
+            <p class="card-text">Books related to music, programming, and other specialized interests.</p>
             <a href="/books/technical/" class="btn btn-primary">Explore Technical</a>
           </div>
         </div>
