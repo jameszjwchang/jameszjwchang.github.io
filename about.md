@@ -13,12 +13,13 @@ permalink: /about/
         <p class="text-muted">{{ site.tagline }}</p>
         <div class="social-links mb-4">
           <a href="https://github.com/{{ site.github.username }}" target="_blank" class="me-2"><i class="bi bi-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/your_linkedin" target="_blank" class="me-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
-          <a href="https://www.youtube.com/channel/your_channel" target="_blank"><i class="bi bi-youtube"></i> YouTube</a>
+          <a href="mailto:{{ site.author.email }}" class="me-2"><i class="bi bi-envelope"></i> Email</a>
+          
+          
         </div>
         <div class="contact-info">
           <p><strong>Email:</strong> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
-          <p><strong>Location:</strong> [Your Location]</p>
+          
         </div>
       </div>
     </div>

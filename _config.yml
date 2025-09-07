@@ -1,20 +1,11 @@
-# The Site Configuration
-
-# Use custom theme instead of Chirpy
-theme: 
-
-# Basic site info
+# Site Configuration
 title: James Chang
 tagline: Musician, Developer, Creator
-description: >- 
-  Personal website of James Chang featuring music, development, art, and more
+description: Personal website of James Chang featuring music, development, art, and more
 
 # URL settings
 url: "https://jameszjwchang.github.io"
-baseurl: "" # No base URL since Jekyll manages the entire site now
-
-# Favicon settings
-favicon: "/assets/img/favicon.ico"
+baseurl: ""
 
 # Author information
 author:
@@ -24,14 +15,6 @@ author:
 # Social links
 github:
   username: jameszjwchang
-twitter:
-  username: your_twitter_handle
-social:
-  name: James Chang
-  links:
-    - https://github.com/jameszjwchang
-    - https://www.linkedin.com/in/your_linkedin
-    - https://www.youtube.com/channel/your_channel
 
 # Site structure
 permalink: /blog/:title/
@@ -39,7 +22,7 @@ permalink: /blog/:title/
 # Blog features
 paginate: 10
 paginate_path: "/blog/page:num/"
-excerpt_separator: "<!--more-->" # Add this line
+excerpt_separator: "<!--more-->"
 
 # Collections
 collections:
@@ -56,7 +39,6 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: true
       toc: true
   - scope:
       path: "_interests"
@@ -75,75 +57,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Other settings remain the same as before
+# Build settings
 lang: en
-timezone:
-
-webmaster_verifications:
-  google: 
-  bing: 
-  alexa: 
-  yandex: 
-  baidu: 
-  facebook: 
-
-analytics:
-  google:
-    id: 
-  goatcounter:
-    id: 
-  umami:
-    id: 
-    domain: 
-  matomo:
-    id: 
-    domain: 
-  cloudflare:
-    id: 
-  fathom:
-    id: 
-
-pageviews:
-  provider: 
-
-theme_mode: 
-
-cdn:
-
+favicon: "/assets/img/favicon.ico"
 avatar: "/assets/img/avatars/profile.jpg"
-
-social_preview_image: 
-
-toc: true
-
-comments:
-  provider: 
-  disqus:
-    shortname: 
-  utterances:
-    repo: 
-    issue_term: 
-  giscus:
-    repo: 
-    repo_id:
-    category:
-    category_id:
-    mapping: 
-    strict: 
-    input_position: 
-    lang: 
-    reactions_enabled: 
-
-assets:
-  self_host:
-    enabled: 
-    env: 
-
-pwa:
-  enabled: true
-  cache:
-    enabled: true
-    deny_paths:
 
 sass:
   style: compressed
@@ -164,9 +81,6 @@ exclude:
   - tools
   - README.md
   - LICENSE
-  - purgecss.js
-  - rollup.config.js
-  - "package*.json"
 
 jekyll-archives:
   enabled: [categories, tags]
